@@ -60,6 +60,9 @@ h4 {
   font-family: 'Circe Extra Bold', sans-serif;
 }
 
+.status {
+  text-align: center;
+}
 .active {
   display: block !important;
 }
