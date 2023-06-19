@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     mask('[name="phone"]');
     checkTextInputs('[name="name"]');
     checkTextInputs('[name="message"]');
-    showMoreStyles('.button-styles', '.styles-2');
+    //простой способ показа элементов на странице
+    // showMoreStyles('.button-styles', '.styles-2');
+
+    //используем данные с json сервера
+    showMoreStyles('.button-styles', '#styles .row');
 
 });

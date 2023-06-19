@@ -1,4 +1,5 @@
 "use strict";
+import { postData } from "../services/requests";
 // import checkNumInputs from "./checkNumInputs";
 const forms = () => {
    //получаем все формы и их поля ввода 
@@ -25,15 +26,7 @@ const forms = () => {
         designer: 'assets/server.php',
         question: 'assets/question.php'
     };
-    //реализуем функцию отправки данных на сервер
-    const postData = async (url, data) => {
-        let res = await fetch(url, {
-            method: "POST",
-            body: data
-        });
 
-        return await res.text();
-    };
     //реализуем функцию удаления статусного сообщения
     const clearInputs = () => {
         inputs.forEach(item => {
