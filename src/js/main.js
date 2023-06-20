@@ -6,6 +6,7 @@ import forms from "./modules/forms";
 import mask from "./modules/mask";
 import checkTextInputs from "./modules/checkTextInputs";
 import showMoreStyles from "./modules/showMoreStyles";
+import calc from "./modules/calc";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -22,5 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //используем данные с json сервера
     showMoreStyles('.button-styles', '#styles .row');
+    calc('#size', '#material', '#options', '.promocode', '.calc-price');
+
 
 });
